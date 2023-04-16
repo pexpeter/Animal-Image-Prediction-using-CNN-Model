@@ -1,0 +1,4 @@
+outs:
+- md5: 72b710cdecf96037bace404f8b131518
+  size: 1902
+  path: CNN Model.py
