@@ -4,7 +4,7 @@ This project is designed to identify [80 animals species](animaldict.csv) using 
 
 ## Dataset
 
-Check the dataset [here]('https://www.kaggle.com/datasets/antoreepjana/animals-detection-images-dataset').
+Check the dataset [here](https://www.kaggle.com/datasets/antoreepjana/animals-detection-images-dataset).
 The model is built using TensorFlow and Keras, and the final model is used to predict the animal category based on the input image. The model accuracy is calculated based on the number of correct predictions.
 
 ## Requirements
