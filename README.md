@@ -27,13 +27,16 @@ The model was trained in the Jupyter notebook which can be found [here](CNN%20Mo
 
 ## Flask App
 
+![alt text](HomePage.png)
 The [flask app](Animal%20Pred%20Flask) has been designed to use the model trained to predict the type of animal in the picture if included in training.
 
 * Input
 The app takes only an image file as input.
+![alt text](Input.jpg)
 
 * Output
 The app gives the predicted label or name of the animal and the previous uploaded picture.
+![alt text](Output.png)
 
 
 ## Limitations and Improvements
@@ -46,20 +49,18 @@ While the animal image prediction model is running, there are still some limitat
 
 * Future work: There are several areas of potential improvement for this project. These include:
 
-    * Adding more species to the dataset.
+  * Adding more species to the dataset.
 
-    * Optimizing the model architecture.
+  * Optimizing the model architecture.
 
-    * Fine-tuning the model.
+  * Fine-tuning the model.
 
 For any improvement don't fail to reach out through.
 
-* [Twitter](https://www.twitter.com/pexpeterr)
+* [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/pexpeterr.svg?style=social&label=Follow%20%40pexpeterr)](https://twitter.com/pexpeterr)
 
-* [Email](mailto:peterkgathoni@gmail.com)
+* [![Gmail URL](https://img.shields.io/badge/Connect%20with-Gmail-red.svg?style=flat&logo=gmail)](mailto:peterkgathoni@gmail.com)
 
-* [Medium](https://medium.com/@peterkgathoni)
+* [![Medium URL](https://img.shields.io/badge/Follow%20%40peterkgathoni-%2312100E.svg?style=flat&logo=medium)](https://medium.com/@peterkgathoni)
 
-
-
-
+* [![LinkedIn URL](https://img.shields.io/badge/Connect%20with%20Me-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/peterkamaugathoni)
