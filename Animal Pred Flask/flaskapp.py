@@ -7,7 +7,6 @@ import joblib
 from PIL import Image
 from werkzeug.utils import secure_filename
 import pandas as pd
-from dvc.api import get_url
 
 app = Flask(__name__)
 
@@ -51,9 +50,8 @@ def make_prediction():
     
     '''
     # Load the model
-    model_path = os.path.join(os.getcwd(), 'models', 'model.pkl.dvc')
-    model_url = get_url(model_path)
-    model = joblib.load(model_url)
+    model_path = os.path.join(os.getcwd(), 'models', 'model.pkl')
+    model = joblib.load(model_path)
     
     # Get the image file from the request
     image = request.files['image']
