@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animal Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+    <h1><b> Animal Predictor</b></h1>
+    <div class="left-pane">
+        <h4>Species:</h4>
+        <select>
+            {% for animal in animals %}
+                <option value="{{ animal }}">{{ animal }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="right-pane">
+        <p> This is an Animal Predictor model for only 80 species, check on the left corner. The model accuracy improves with time. Don't stress your brain out! </p>
+        <form method="post" action="{{ url_for('make_prediction') }}" enctype="multipart/form-data">
+            <div class="form-group">
+            <label for="image">Select an image to predict:</label>
+            <input type="file" name="image" id="image" accept="image/*">
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
