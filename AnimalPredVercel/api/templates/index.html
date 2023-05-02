@@ -19,7 +19,7 @@
     </div>
     <div class="right-pane">
         <p> This is an Animal Predictor model for only 80 species, check on the left corner. The model accuracy improves with time. Don't stress your brain out! </p>
-        <form method="post" action="{{ url_for('make_prediction') }}" enctype="multipart/form-data">
+        <form method="post" action="{{ url_for('show_prediction') }}" enctype="multipart/form-data">
             <div class="form-group">
             <label for="image">Select an image to predict:</label>
             <input type="file" name="image" id="image" accept="image/*">
