@@ -1,23 +1,21 @@
-from flask import Flask, request, render_template, redirect, url_for
+from flask import Flask, send_from_directory
 import pandas as pd
-
+import os
 
 app = Flask(__name__)
 
-#Animal species from the train generator
+# Animal species from the train generator
 animal_classes = pd.read_csv('animaldict.csv')
 
-@app.route('/result', methods=['POST'])
-def show_prediction():
-    return render_template('result.html')
-    
-    
+# Serve the index.html file from the static directory
 @app.route('/')
 def index():
-    animals = animal_classes['index'].tolist()
-    return render_template('index.html', animals=animals)
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'index.html')
 
+# Handle the form submission and serve the result page from the static directory
+@app.route('/result', methods=['POST'])
+def show_prediction():
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'result.html')
 
-if (__name__ == '__main__'):
-    app.run(debug=True)
-
+if __name__ == '__main__':
+    app.run()
