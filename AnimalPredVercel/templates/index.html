@@ -31,10 +31,7 @@
     <script>
         document.getElementById('prediction-form').addEventListener('submit', function(event) {
             event.preventDefault();
-            const animalSelect = document.getElementById('animal-select');
-            const selectedAnimal = animalSelect.value;
             const formData = new FormData(this);
-            formData.append('animal', selectedAnimal);
             fetch('/result', {
                 method: 'POST',
                 body: formData
@@ -48,5 +45,6 @@
             .catch(error => console.error(error));
         });
     </script>
+
 </body>
 </html>
