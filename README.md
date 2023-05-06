@@ -55,6 +55,10 @@ While the animal image prediction model is running, there are still some limitat
 
   * Fine-tuning the model.
 
+
+## Vercel App
+To view the user interface of the flask app, I created a vercel app to showcase that. The model file is larger than limit expected thus app cannot be used for prediction. The link to the Animal Predictor can be found at the project github page or [here][def].
+
 For any improvement don't fail to reach out through.
 
 * [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/pexpeterr.svg?style=social&label=Follow%20%40pexpeterr)](https://twitter.com/pexpeterr)
@@ -64,3 +68,6 @@ For any improvement don't fail to reach out through.
 * [![Medium URL](https://img.shields.io/badge/Follow%20%40peterkgathoni-%2312100E.svg?style=flat&logo=medium)](https://medium.com/@peterkgathoni)
 
 * [![LinkedIn URL](https://img.shields.io/badge/Connect%20with%20Me-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/peterkamaugathoni)
+
+
+[def]: https://animalpredictor.vercel.app
