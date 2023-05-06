@@ -8,7 +8,7 @@ app = Flask(__name__)
 animal_classes = pd.read_csv('animaldict.csv')
 
 
-@app.route('/result', methods=['POST'])
+@app.route('/result', methods=['GET','POST'])
 def result():
     return render_template('result.html') 
 
